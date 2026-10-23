@@ -1,0 +1,74 @@
+/**
+ * customCursor.css
+ * Styles custom twin cursor components on desktop, hiding standard cursor inputs securely.
+ */
+
+@media (hover: hover) and (pointer: fine) {
+  /* Suppress vanilla OS mouse pointers */
+  html, body {
+    cursor: none !important;
+  }
+  a, button, [role="button"], .folder, .anime-item, .trait-tag {
+    cursor: none !important;
+  }
+  
+  .custom-cursor-dot {
+    position: fixed;
+    top: -3px;
+    left: -3px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--poki-lilac);
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+    transform: translate3d(-100px, -100px, 0);
+    transition: background-color 0.2s ease;
+  }
+  
+  .custom-cursor-ring {
+    position: fixed;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid var(--poki-pink);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate3d(-100px, -100px, 0);
+    transition: 
+      width 0.2s ease, 
+      height 0.2s ease, 
+      top 0.2s ease, 
+      left 0.2s ease, 
+      border-color 0.2s ease, 
+      background-color 0.2s ease;
+  }
+  
+  .custom-cursor-dot.clicking {
+    background-color: var(--poki-pink);
+    transform: scale(0.6);
+  }
+  
+  .custom-cursor-ring.clicking {
+    border-color: var(--poki-pink);
+    background-color: rgba(213, 206, 227, 0.15); /* matching --poki-pink */
+  }
+  
+  .custom-cursor-ring.hovered {
+    width: 44px;
+    height: 44px;
+    top: -22px;
+    left: -22px;
+    border-color: var(--poki-aqua);
+    background-color: rgba(152, 185, 196, 0.08); /* matching --poki-aqua */
+  }
+}
+
+/* Fail-safe hiding on devices that do not support hovering inputs (e.g., cell phones, tablets) */
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor-dot, .custom-cursor-ring {
+    display: none !important;
+  }
+}

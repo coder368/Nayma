@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Nayma Israt | Creator Profile</title>
+    
+    <!-- SEO & Open Graph Meta Tags -->
+    <meta name="description" content="Nayma Israt | lowkey doing my own thing · anime connoisseur · unbothered mind #nonchalant 🖤" />
+    <meta property="og:title" content="Nayma Israt | Profile" />
+    <meta property="og:description" content="lowkey doing my own thing · anime connoisseur · unbothered mind #nonchalant 🖤" />
+    <meta property="og:image" content="/src/assets/images/nayma_profile.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Folder.css" />
+    <link rel="stylesheet" href="GooeyNav.css" />
+    <link rel="stylesheet" href="Counter.css" />
+    <link rel="stylesheet" href="customCursor.css" />
+    <!-- Import Outfit and Fira Code for Typewriter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Three.js & Postprocessing Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/postprocessing@6.33.3/build/postprocessing.js"></script>
+    <script src="PrismaticBurst.js"></script>
+    <script src="BlurText.js"></script>
+    <script src="TextType.js"></script>
+    <script src="PixelBlast.js"></script>
+    <script src="Plasma.js"></script>
+    <script src="Folder.js"></script>
+    <script src="GooeyNav.js"></script>
+    <script src="Counter.js"></script>
+    <script src="typingAnimation.js"></script>
+    <script src="scrollReveal.js"></script>
+    <script src="customCursor.js"></script>
+  </head>
+  <body>
+    <!-- Premium Desktop Dot Grid Parallax Background Layer -->
+    <div class="dot-grid-layer"></div>
+
+    <!-- Background Layers (PixelBlast Interactive Only) -->
+    <div id="pixel-blast-bg" class="pixel-blast-container"></div>
+
+    <!-- CRT Cinematic Screening Overlay (Dynamic Scanner Elements) -->
+    <div class="crt-vignette"></div>
+    <div class="crt-scanlines"></div>
+    <div class="crt-scanline-sweep"></div>
+
+    <!-- Container Wrapper -->
+    <div class="app-container">
+      <!-- Premium Header -->
+      <header class="header">
+        <div
+          class="logo"
+          id="header-logo"
+          onclick="
+            switchTab('tab-home', null);
+            return false;
+          "
+        >
+          <span class="logo-sparkle">✦</span> <span id="logo-name">Nayma</span>
+          <span class="logo-sigma">⚡</span>
+        </div>
+      </header>
+
+      <!-- Dynamic Tab Content Wrapper -->
+      <div class="tab-content-wrapper">
+        <!-- Tab 1: Home (Core Hero Grid) -->
+        <div id="tab-home" class="tab-pane active">
+          <main class="hero-grid">
+            <!-- Left Column: Content Details -->
+            <section class="hero-content">
+              <div class="welcome-pill terminal-status-pill">
+                <span class="terminal-pulse-indicator">●</span>
+                <span class="terminal-lbl">SYS_AURA:</span> [ LOWKEY & UNBOTHERED ] ✦
+              </div>
+
+              <!-- Typewriter Title -->
+              <h1 class="hero-title">
+                Hey, I'm
+                <span class="gradient-text text-name" id="profile-display-name"
+                  >(+Nayma Israt+)</span
+                >
+                <br />
+                I'm
+                <span
+                  id="typewriter-role"
+                  class="gradient-text text-role"
+                ></span
+                ><span class="typewriter-cursor">|</span>
+              </h1>
+
+              <!-- Bio Description -->
+              <p class="hero-desc" id="profile-bio">
+                lowkey doing my own thing · anime connoisseur · unbothered mind #nonchalant 🖤
+              </p>
+
+              <!-- Dynamic Tags -->
+              <div class="tags-row" id="profile-tags">
+                <span class="tag">🧠 deep thinker</span>
+                <span class="tag">🎧 nonchalant</span>
+                <span class="tag">🎌 anime connoisseur</span>
+              </div>
+
+              <!-- Social CTAs (Instagram & Email Only as requested) -->
+              <div class="social-actions">
+                <a
+                  href="#"
+                  class="btn-glow btn-instagram"
+                  id="link-instagram"
+                  target="_blank"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+                <a
+                  href="#"
+                  class="btn-glow btn-email"
+                  id="link-email"
+                  target="_blank"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Email Me</span>
+                </a>
+              </div>
+
+              <!-- Sleek Divider -->
+              <div class="sparkle-divider">
+                <span class="sparkle">✦</span>
+                <span class="line"></span>
+                <span class="sparkle">✦</span>
+              </div>
+
+              <!-- Stats Section -->
+              <div class="stats-card">
+                <div class="stat-box">
+                  <span class="stat-num" id="stat-posts">248</span>
+                  <span class="stat-label">posts</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-box">
+                  <span class="stat-num" id="stat-followers">12.4k</span>
+                  <span class="stat-label">followers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-box">
+                  <span class="stat-num" id="stat-following">382</span>
+                  <span class="stat-label">following</span>
+                </div>
+              </div>
+
+              <!-- Sleek Monospace Terminal & Aura Telemetry Widget -->
+              <div class="tech-terminal-box">
+                <div class="tech-terminal-header">
+                  <div class="tech-dots">
+                    <span class="tech-dot dot-r"></span>
+                    <span class="tech-dot dot-y"></span>
+                    <span class="tech-dot dot-g"></span>
+                  </div>
+                  <span class="tech-terminal-title">nayma@lowkey-core:~$ ./aura_telemetry --init</span>
+                  <span class="tech-system-active">
+                    <span class="active-pulse"></span>
+                    SECURE
+                  </span>
+                </div>
+                <div class="tech-terminal-body">
+                  <div class="term-line"><span class="term-accent-color">nayma_sys_boot:</span> Calibrating unbothered waves...</div>
+                  <div class="term-line"><span class="term-success-color">[SUCCESS]</span> Core mind integrity established: 100% Nonchalant</div>
+                  <div class="term-line"><span class="term-accent-color">> get_aura_coefficients</span></div>
+                  <div class="term-row"><span class="term-label">INTELLECT:</span> <span class="term-value">Drawn to Deep Thought & Observing Storms</span></div>
+                  <div class="term-row"><span class="term-label">ANIME_LOG:</span> <span class="term-value text-lavender">S.E. Lain, Edgerunners, Jujutsu Kaisen</span></div>
+                  <div class="term-row"><span class="term-label">FOCUS_GRID:</span> <span class="term-value text-aqua">SLTPSC Student Terminal // Class of 2026</span></div>
+                  <div class="term-row">
+                    <span class="term-label">SHIELD_STATUS:</span>
+                    <span class="term-progress">[████████████████████] 100% stable</span>
+                  </div>
+                  <div class="term-line-cursor">nayma@lowkey-core:~$ <span class="term-blinking-cursor">█</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Right Column: Visual Halo Ring -->
+            <section class="hero-visual">
+              <div class="halo-container">
+                <!-- Layers of neon glowing rings -->
+                <div class="halo-glow-ring ring-1"></div>
+                <div class="halo-glow-ring ring-2"></div>
+                <div class="halo-glow-ring ring-3"></div>
+
+                <!-- Avatar wrapper -->
+                <div class="halo-avatar-wrapper">
+                  <img
+                    id="profile-avatar"
+                    src=""
+                    referrerpolicy="no-referrer"
+                    alt=""
+                    class="halo-avatar"
+                    width="260"
+                    height="260"
+                  />
+                  <div class="halo-badge" id="profile-badge">⚡</div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <!-- Tab 2: About / Information Tab (Stunning Cozy Dashboard) -->
+        <div id="tab-about" class="tab-pane">
+          <main class="about-grid">
+            <!-- Left Columns: Anime Corner & Overthinking -->
+            <section class="about-cards-col">
+              <!-- Cozy Anime Listing Widget -->
+              <div class="about-card anime-card reveal-on-scroll">
+                <h3><span class="card-icon">🎌</span> Anime Connoisseur</h3>
+                <div class="anime-grid">
+                  <div class="anime-item">
+                    <span class="anime-bullet">⚡</span>
+                    <div class="anime-info">
+                      <h4>Cyberpunk: Edgerunners</h4>
+                      <p>High-stakes neo-noir atmosphere & grit</p>
+                    </div>
+                  </div>
+                  <div class="anime-item">
+                    <span class="anime-bullet">👁️</span>
+                    <div class="anime-info">
+                      <h4>Jujutsu Kaisen</h4>
+                      <p>Complex tactical cursed energy conflicts</p>
+                    </div>
+                  </div>
+                  <div class="anime-item">
+                    <span class="anime-bullet">🌌</span>
+                    <div class="anime-info">
+                      <h4>Serial Experiments Lain</h4>
+                      <p>Existential cyber-matrix consciousness</p>
+                    </div>
+                  </div>
+                  <div class="anime-item">
+                    <span class="anime-bullet">⚔️</span>
+                    <div class="anime-info">
+                      <h4>Attack on Titan</h4>
+                      <p>Uncompromising strategic determination</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="anime-footer">
+                  <p>Currently Reading: <strong>Solo Leveling</strong> ⚡</p>
+                </div>
+              </div>
+
+              <!-- New: My Setup / Tools -->
+              <div class="about-card tools-card reveal-on-scroll">
+                <h3><span class="card-icon">💻</span> Creative Setup</h3>
+                <div class="tools-list">
+                  <span class="tool-tag">VS Code</span>
+                  <span class="tool-tag">Figma</span>
+                  <span class="tool-tag">Premiere Pro</span>
+                  <span class="tool-tag">Obsidian</span>
+                </div>
+              </div>
+
+              <!-- Funny/Relatable Overthinker Widget -->
+              <div class="about-card overthink-card reveal-on-scroll">
+                <h3>
+                  <span class="card-icon">🧠</span> Lowkey Deep Thinker
+                </h3>
+                <p class="overthink-quote">
+                  "Observing the storm quietly while solving equations under a calm, unbothered skyline. Silence speaks louder. 🌌"
+                </p>
+                <div class="overthink-stats">
+                  <span class="pill">Focus State: 100% locked</span>
+                  <span class="pill">Cognitive Load: Calibrated</span>
+                </div>
+              </div>
+            </section>
+
+            <!-- Right Columns: Student Life & Kind Heart Traits -->
+            <section class="about-details-col">
+              <!-- Student details card -->
+              <div class="about-card student-card reveal-on-scroll">
+                <h3>
+                  <span class="card-icon">🎓</span> Student Life at SLTPSC
+                </h3>
+                <p class="student-text">
+                  Navigating assignments, classrooms, and exams while chasing
+                  digital creator dreams. Balancing campus life at SLTPSC with
+                  creative streaming and coding guides.
+                </p>
+                <div class="school-badge">SLTPSC Student class of 2026</div>
+              </div>
+
+              <!-- New: Current Mood / Music -->
+              <div class="about-card music-card reveal-on-scroll">
+                <h3><span class="card-icon">🎵</span> On Repeat</h3>
+                <div class="music-player">
+                  <div class="music-info">
+                    <p class="song-title">Lofi Girl Radio</p>
+                    <p class="song-artist">Chill Beats to Study/Relax</p>
+                  </div>
+                  <div class="music-visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Traits details card -->
+              <div class="about-card traits-card reveal-on-scroll">
+                <h3><span class="card-icon">⚡</span> Independent & Sigma Vibe</h3>
+                <p class="student-text">
+                  Believer in intense focus, high standard living, and quiet confidence. Maintaining an unbothered and self-sufficient presence in digital spaces where real growth is the priority.
+                </p>
+                <div class="traits-badges">
+                  <span class="trait-tag pink">⚡ Sigma</span>
+                  <span class="trait-tag lilac">🎧 Lowkey</span>
+                  <span class="trait-tag aqua">☕ Chill</span>
+                </div>
+              </div>
+
+              <!-- Interactive Folder: My Qualities ✨ -->
+              <div class="about-card folder-card reveal-on-scroll">
+                <h3><span class="card-icon">📂</span> Core Focus</h3>
+                <p class="folder-card-hint">
+                  Click the folder to decrypt what drives my grind... ⚡
+                </p>
+                <div class="folder-section" id="qualities-folder-mount"></div>
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <!-- Tab 3: Email / Contact Tab -->
+        <div id="tab-email" class="tab-pane">
+          <main class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-header">
+                <span class="contact-sparkle">✦</span>
+                <h2>Let's Connect</h2>
+                <p>I'm always open to new collaborations and friendly chats!</p>
+              </div>
+
+              <div class="contact-info">
+                <div class="info-item">
+                  <span class="info-label">Email Me</span>
+                  <button id="copy-email-btn" onclick="copyEmailToClipboard()" class="info-value" title="Click to copy email address"
+                    >naymaisrat2416@gmail.com</button
+                  >
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Somewhere under the stars ✨</span>
+                </div>
+              </div>
+
+              <div class="contact-actions">
+                <a
+                  href="mailto:naymaisrat2416@gmail.com"
+                  class="btn-glow btn-email"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Send a Message</span>
+                </a>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- Glassmorphic Bottom Navigation Dock -->
+    <nav class="ios-dock-wrapper">
+      <div class="gooey-header-nav" id="gooey-nav-mount"></div>
+    </nav>
+
+    <!-- Admin Modal -->
+    <div class="modal-overlay" id="admin-modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>✦ Admin Panel</h2>
+          <button class="modal-close" onclick="closeAdmin()">✕</button>
+        </div>
+
+        <div class="modal-body">
+          <!-- Password gate -->
+          <div id="password-gate">
+            <p class="gate-label">Enter admin password</p>
+            <input
+              type="password"
+              id="admin-password"
+              class="modal-input"
+              placeholder="Password..."
+            />
+            <button class="save-btn" onclick="checkPassword()">Unlock ✦</button>
+            <p
+              class="gate-hint"
+              id="pw-error"
+              style="color: #ff75a0; display: none; margin-top: 10px"
+            >
+              Wrong password 🌸
+            </p>
+          </div>
+
+          <!-- Admin form (hidden until password correct) -->
+          <div id="admin-form" style="display: none">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" id="edit-name" class="modal-input" />
+            </div>
+            <div class="form-group">
+              <label>Handle (@username)</label>
+              <input type="text" id="edit-handle" class="modal-input" />
+            </div>
+            <div class="form-group">
+              <label>Bio</label>
+              <input type="text" id="edit-bio" class="modal-input" />
+            </div>
+            <div class="form-group">
+              <label>Avatar URL</label>
+              <input
+                type="text"
+                id="edit-avatar"
+                class="modal-input"
+                placeholder="https://..."
+              />
+            </div>
+            <div class="form-group">
+              <label>Badge Emoji</label>
+              <input
+                type="text"
+                id="edit-badge"
+                class="modal-input"
+                placeholder="🌸"
+              />
+            </div>
+            <div class="form-group">
+              <label>Tags (comma separated)</label>
+              <input
+                type="text"
+                id="edit-tags"
+                class="modal-input"
+                placeholder="🎀 fashion, 🎮 gaming"
+              />
+            </div>
+            <div class="form-group">
+              <label>Posts Count</label>
+              <input type="text" id="edit-posts" class="modal-input" />
+            </div>
+            <div class="form-group">
+              <label>Followers Count</label>
+              <input type="text" id="edit-followers" class="modal-input" />
+            </div>
+            <div class="form-group">
+              <label>Following Count</label>
+              <input type="text" id="edit-following" class="modal-input" />
+            </div>
+            <div class="form-group">
+              <label>Instagram URL</label>
+              <input
+                type="text"
+                id="edit-instagram"
+                class="modal-input"
+                placeholder="https://instagram.com/..."
+              />
+            </div>
+            <div class="form-group" style="display: none">
+              <!-- Keeping backend compatibility for TikTok but hiding UI -->
+              <label>TikTok URL</label>
+              <input
+                type="text"
+                id="edit-tiktok"
+                class="modal-input"
+                placeholder="https://tiktok.com/@..."
+              />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="text"
+                id="edit-email"
+                class="modal-input"
+                placeholder="mailto:..."
+              />
+            </div>
+            <div class="form-group">
+              <label>Change Admin Password</label>
+              <input
+                type="password"
+                id="edit-password"
+                class="modal-input"
+                placeholder="Leave blank to keep current"
+              />
+            </div>
+
+            <button class="save-btn" onclick="saveChanges()">
+              Save Changes ✦
+            </button>
+            <p class="saved-msg" id="saved-msg">✦ Saved successfully!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Easter Egg: Hidden Konami Code Overlay -->
+    <div id="easter-egg-overlay" class="easter-overlay">
+      <div class="easter-content">
+        <div class="easter-emoji-rain" id="easter-emoji-rain"></div>
+        <h2 class="easter-title">✦ Decryption Successful ✦</h2>
+        <p class="easter-text">
+          Nayma is an independent, unbothered, and brilliant mind doing her own thing.
+          Stay focused, stay lowkey. ⚡🌌
+        </p>
+        <button class="easter-close" onclick="closeEasterEgg()">
+          Acknowledged ✦
+        </button>
+      </div>
+    </div>
+
+    <!-- Easter Egg: Heart Explosion Container -->
+    <div id="heart-explosion" class="heart-explosion-container"></div>
+
+    <!-- Easter Egg: Secret Toast Notification -->
+    <div id="secret-toast" class="secret-toast">
+      <span id="secret-toast-text"></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

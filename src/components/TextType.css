@@ -1,0 +1,11 @@
+.text-type { display: inline-block; white-space: pre-wrap; }
+.text-type__cursor {
+  font-size: 0.85em;
+  font-weight: 300;
+  opacity: 1;
+  color: inherit;
+  vertical-align: baseline;
+  margin-left: 2px;
+  display: inline-block;
+}
+.text-type__cursor--hidden { display: none; }

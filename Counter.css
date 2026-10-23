@@ -1,0 +1,94 @@
+/* Counter.css - React Bits Counter styling overrides for Vanilla JS integration */
+
+.counter-container {
+  position: relative;
+  display: inline-flex !important;
+  align-items: center;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.counter-counter {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.counter-digit {
+  position: relative;
+  width: 1ch;
+  overflow: hidden;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.counter-separator {
+  display: inline-block;
+  text-align: center;
+  width: 0.4ch;
+}
+
+.counter-track {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.counter-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.counter-suffix {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+}
+
+.gradient-container {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.top-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: scroll !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
